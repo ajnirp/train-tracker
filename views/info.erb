@@ -1,0 +1,64 @@
+<h1>Train Info</h1>
+
+<p>Here are the details for your train:</p>
+
+<div class="offset4">
+	<div class="row dashboard">
+		<div class="span4">
+			<h2>Details</h2>
+			<p><strong>Train Name:</strong> <%= @train_name %></p>
+			<p><strong>Train Number:</strong> <%= @train_num %></p>
+			<p><strong>Train Date:</strong> <%= @train_date_reversed %></p>
+		</div>
+		<div class="span4">
+			<h2>Destination</h2>
+			<p><%= @final_destn_long %> is <strong><%= @distance_to_destn %> km</strong> away</p>
+		</div>
+	</div>
+
+	<div class="row dashboard">
+		<div class="span4">
+			<h2>Last Station</h2>
+			<% if @stations_hash.keys.include? @prev_stn %>
+				<p>You just crossed <strong><%= @prev_stn %></strong> (<%= @stations_hash[@prev_stn] %>)</p>
+			<% else %>
+				<p>Your train hasn't started yet.</p>
+			<% end %>
+		</div>
+		<div class="span4">
+			<h2>Next Station</h2>
+			<p>The next station is <strong><%= @next_stn %></strong> (<%= @stations_hash[@next_stn] %>)</p>
+		</div>
+	</div>
+
+	<div class="row dashboard">
+		<div class="span4">
+			<h2>Expected Delay</h2>
+			<p>
+				<% if @delay_mins == 0 %>
+					The train is running on time!
+				<% else %>
+					The train has been delayed by about <%= @delay_mins %> min
+				<% end %>
+			</p>
+		</div>
+		<div class="span4">
+			<h2>Weather Forecast</h2>
+			<p>The weather at <strong><%= @stations_hash[@next_stn] %></strong> is <strong><%= @weather_forecast %></strong></p>
+		</div>
+	</div>
+
+	<div class="row dashboard">
+		<div class="span4">
+			<h2>Emergency Nos.</h2>
+			<p>Emergency numbers for <strong><%= @stations_hash[@next_stn] %></strong> are:</p>
+			<p><strong>Police </strong>088888 88888</p>
+			<p><strong>Ambulance </strong>+91 98181 91961</p>
+		</div>
+		<div class="span4">
+			<h2>Services</h2>
+			<p><a class="btn btn-inverse" href="http://www.railtourismindia.com/cgi-bin/dev1.dll/irctc/booking/car.do?click=true&screen=FromTrainType">Cab</a></p>
+			<p><a class="btn btn-inverse" href="http://www.railtourismindia.com/cgi-bin/hotel.dll/irctc/services/home.do">Hotel</a></p>
+		</div>
+	</div>
+</div>

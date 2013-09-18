@@ -1,0 +1,30 @@
+irb(main):001:0> require 'net/http'
+=> true
+irb(main):002:0> uri = URI.parse("http://www.example.com/search.json")
+=> #<URI::HTTP:0x8eb1d08 URL:http://www.example.com/search.json>
+irb(main):003:0> response = Net::HTTP.post_form(uri, {"search" => "Berlin"})
+=> #<Net::HTTPFound 302 Moved Temporarily readbody=true>
+irb(main):004:0> uri = URI.parse("http://coa-search-193678880.ap-southeast-1.elb.amazonaws.com/search.json?callback=foo&q=12516&_=123456")
+=> #<URI::HTTP:0x8ed0988 URL:http://coa-search-193678880.ap-southeast-1.elb.amazonaws.com/search.json?callback=foo&q=12516&_=123456>
+irb(main):005:0> response = Net::HTTP.post_form(uri, {"search" => "number"})
+=> #<Net::HTTPNotFound 404 Not Found readbody=true>
+irb(main):006:0> uri = URI.parse("http://coa-search-193678880.ap-southeast-1.elb.amazonaws.com/search.json?callback=foo&q=12516&_=123456")
+=> #<URI::HTTP:0x8eeb65c URL:http://coa-search-193678880.ap-southeast-1.elb.amazonaws.com/search.json?callback=foo&q=12516&_=123456>
+irb(main):007:0> 
+irb(main):008:0* 
+irb(main):009:0* 
+irb(main):010:0* response = Net::HTTP.post_form(uri)
+ArgumentError: wrong number of arguments (1 for 2)
+	from /usr/lib/ruby/1.9.1/net/http.rb:478:in `post_form'
+	from (irb):10
+	from /usr/bin/irb:12:in `<main>'
+irb(main):011:0> response = Net::HTTP.get_response(uri)
+
+
+
+
+
+
+resp = response[5..-2] # removing the "fooo(...)"
+
+stats.scan(/\(.*?\)/).map { |e| e.gsub(/\(/, '').gsub(/\)/, '') + '%2C' }.join[0..-4] + '&RequestType=Location'

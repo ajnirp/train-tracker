@@ -1,0 +1,27 @@
+<h1>Train Tracker</h1>
+
+<p>Welcome to train tracker! Please enter your PNR below</p>
+
+<script type="text/javascript">
+	function validateForm() {
+		var pnr = document.forms["EnterPNR"]["pnr"].value;
+		if (pnr == "") {
+			alert("Please enter a PNR");
+			return false;
+		}
+		else {
+			if (pnr.match(/^\d\d\d\d\d\d\d\d\d\d$/)) {
+				return true;
+			}
+			else {
+				alert("PNR should be a 10-digit number")
+				return false;
+			}
+		}
+	}
+</script>
+
+<form name="EnterPNR" onsubmit="return validateForm();" action="/info">
+	<input name="pnr" placeholder="Enter PNR here"/> <br>
+	<button type="submit" class="btn btn-inverse">Submit</button>
+</form>

@@ -1,0 +1,19 @@
+body { margin-right: auto; margin-left: auto; text-align: center; }
+#nav { list-style-type: none; }
+#nav li { display: inline-block; margin: 10px; }
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+section { margin-top: 20px; }
+h1 { margin-bottom: 30px; }
+.navbar-inner {text-align:center;}
+.dashboard {
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #404040;
+}

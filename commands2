@@ -1,0 +1,34 @@
+h=JSON.load ''
+
+
+h[h["keys"][0]]["station_updates"].reject { |k,v| v["status"] == "departed" }.keys.first
+
+weather
+
+results > channel > item > forecast > 
+
+
+
+    # curl_hash = {}
+
+    # curl_hash[:t] = @train_num
+    # curl_hash[:s] = @train_date
+    # curl_hash[:codes] = stns
+    # curl_hash[:RequestType] = "StationLocation"
+
+    # grep_result = `curl --head 'http://trainenquiry.com/RailYatri.ashx' | grep Set-Cookie`
+    # cookie = grep_result.split[1]
+
+    # http = Curl.post("http://trainenquiry.com/RailYatri.ashx", curl_hash) do |http|
+    #   http.headers['Cookie']="#{cookie} __utma=123456; __utmb=123456; __utmc=123456; __utmz=123456=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=123456|1=RunningStatus=(Today)=1"
+    #   http.headers['Host'] = 'trainenquiry.com'
+    #   http.headers['Origin'] = 'http://trainenquiry.com'
+    #   http.headers['Accept-Encoding'] = 'gzip,deflate,sdch'
+    #   http.headers['Accept-Language'] = 'en-US,en;q=0.8'
+    #   http.headers['User-Agent']="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36"
+    #   http.headers['Accept']="*/*"
+    #   http.headers['Connection']="keep-alive"
+    #   http.headers['Content-Type']="application/x-www-form-urlencoded"
+    #   http.headers['Referer']="http://trainnenquiry.com/TrainStatus.aspx"
+    #   http.headers['X-Requested-With']="XMLHttpRequest"
+    # end

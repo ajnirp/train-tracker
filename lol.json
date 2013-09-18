@@ -1,0 +1,14 @@
+{query:{count:1,created:2013-07-14T03:25:41Z,lang:en-US,diagnostics:{publiclyCallable:true,url:{execution-start-time:0,execution-stop-time:5,execution-time:5,content:http://weather.yahooapis.com/forecastrss?w=2295252},user-time:5,service-time:5,build-version:38230},results:{channel:{title:Yahoo! Weather - Puri, IN,link:http://us.rd.yahoo.com/dailynews/rss/weather/Puri__IN/*http://weather.yahoo.com/forecast/INXX0103_f.html,description:Yahoo! Weather for Puri, IN,language:en-us,lastBuildDate:Sun, 14 Jul 2013 5:29 am IST,ttl:60,location:{city:Puri,country:India,region:OR},units:{distance:mi,pressure:in,speed:mph,temperature:F},wind:{chill:78,direction:250,speed:3},atmosphere:{humidity:96,pressure:,rising:0,visibility:1.24},astronomy:{sunrise:5:14 am,sunset:6:30 pm},image:{title:Yahoo! Weather,width:142,height:18,link:http://weather.yahoo.com,url:http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif},item:{title:Conditions for Puri, IN at 5:29 am IST,lat:19.81,long:85.82,link:http://us.rd.yahoo.com/dailynews/rss/weather/Puri__IN/*http://weather.yahoo.com/forecast/INXX0103_f.html,pubDate:Sun, 14 Jul 2013 5:29 am IST,condition:{code:26,date:Sun, 14 Jul 2013 5:29 am IST,temp:78,text:Cloudy},description:
+<img src="http://l.yimg.com/a/i/us/we/52/26.gif"/><br />
+<b>Current Conditions:</b><br />
+Cloudy, 78 F<BR />
+<BR /><b>Forecast:</b><BR />
+Sun - Scattered Thunderstorms. High: 89 Low: 79<br />
+Mon - Scattered Thunderstorms. High: 91 Low: 79<br />
+Tue - PM Thunderstorms. High: 90 Low: 79<br />
+Wed - Isolated Thunderstorms. High: 91 Low: 79<br />
+Thu - PM Thunderstorms. High: 91 Low: 79<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Puri__IN/*http://weather.yahoo.com/forecast/INXX0103_f.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+,forecast:[{code:38,date:14 Jul 2013,day:Sun,high:89,low:79,text:Scattered Thunderstorms},{code:38,date:15 Jul 2013,day:Mon,high:91,low:79,text:Scattered Thunderstorms},{code:38,date:16 Jul 2013,day:Tue,high:90,low:79,text:PM Thunderstorms},{code:37,date:17 Jul 2013,day:Wed,high:91,low:79,text:Isolated Thunderstorms},{code:38,date:18 Jul 2013,day:Thu,high:91,low:79,text:PM Thunderstorms}],guid:{isPermaLink:false,content:INXX0103_2013_07_18_7_00_IST}}}}}}

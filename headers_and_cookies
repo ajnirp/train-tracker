@@ -1,0 +1,13 @@
+HTTP/1.0 200 OK
+Cache-Control: private
+Content-Length: 19715
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 2.0.50727
+Set-Cookie: ASP.NET_SessionId=t43gog45enjcmbjjoz2vx0y5; path=/; HttpOnly
+X-Powered-By: ASP.NET
+Date: Sun, 14 Jul 2013 06:18:43 GMT
+X-Cache: MISS from inventum
+Via: 1.0 inventum (squid/3.1.9)
+Connection: close
+
